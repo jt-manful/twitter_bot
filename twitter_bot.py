@@ -5,17 +5,15 @@ import tweepy
 
 BOT_SCREEN_NAME = ''
 USER_SCREEN_NAME = ''
-TWEET_COUNT = 5
-BOT_TWEET_COUNT = 1
+TWEET_COUNT = 5 # number of tweets the bots sees at a time
+BOT_TWEET_COUNT = 1 # number of recent tweets from the bot
 KEYWORDS = [""]
 seen = set()
 FILENAME = ''
-SLEEP_TIME = 900
+SLEEP_TIME = 0 # how ofter you want to check for new tweets
 
 
-# tweet line reply
-# message + fixed text todays date
-#
+
 def api():
     """
         Authenticate the current user's Twitter account.
