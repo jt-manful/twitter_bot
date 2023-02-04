@@ -1,4 +1,3 @@
-# import twitter library
 import time
 import keys
 import tweepy
@@ -129,6 +128,8 @@ if __name__ == '__main__':
         bot_id = api.get_user(screen_name=BOT_SCREEN_NAME).id
         respond_to_tweets = searchKeyword(KEYWORDS, getTweet(api, USER_SCREEN_NAME, TWEET_COUNT))
         message_2 = getBotTweet(api, BOT_SCREEN_NAME, BOT_TWEET_COUNT)
-        for k, message in message_2.items():
-            quoteTweet(api, USER_SCREEN_NAME, message, respond_to_tweets)
+        # for k, message in message_2.items():
+           # quoteTweet(api, USER_SCREEN_NAME, message, respond_to_tweets)
+        # for k, message in message_2.items():
+           # replyTweet(api, USER_SCREEN_NAME, message, respond_to_tweets)
         time.sleep(SLEEP_TIME)
